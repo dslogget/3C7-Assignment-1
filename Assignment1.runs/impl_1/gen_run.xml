@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1550481517">
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1551381039">
   <File Type="PWROPT-DCP" Name="BoardMap_pwropt.dcp"/>
   <File Type="ROUTE-PWR" Name="BoardMap_power_routed.rpt"/>
   <File Type="PA-TCL" Name="BoardMap.tcl"/>
@@ -158,7 +158,9 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017">
+      <Desc>Default settings for Implementation.</Desc>
+    </StratHandle>
     <Step Id="init_design"/>
     <Step Id="opt_design"/>
     <Step Id="power_opt_design"/>

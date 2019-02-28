@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:E:/Vivado/Assignment1/Basys3.xdc rfile:../../../Basys3.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:C:/Users/Daniel/Documents/College/3C7/3C7-Assignment-1/Basys3.xdc rfile:../../../Basys3.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:8 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN W5 [get_ports CLK]
 set_property src_info {type:XDC file:1 line:13 export:INPUT save:INPUT read:READ} [current_design]

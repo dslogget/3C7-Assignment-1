@@ -24,7 +24,7 @@ module BoardMap(
     input [15:0] SW,
     input [4:0] BTN,
     input CLK,
-    output reg[15:0] LED,
+    output wire[15:0] LED,
     output wire[3:0] SSEG_AN,
     output wire[7:0] SSEG_CA
     );
@@ -36,30 +36,49 @@ module BoardMap(
     Display disp(.CLK(CLK), .num(dispVal), .SSEG_AN(SSEG_AN), .SSEG_CA(SSEG_CA));
     ALUBase ALU(.A(A), .B(B), .fxn(fxn), .X(out));
     
-    always@(posedge(CLK))
+    assign LED[15:10] = out;
+    assign LED[2:0] = fxn;
+    
+    
+    
+    always@(posedge CLK)
     begin
-        if(SW[15])
+        if(BTN[0])
+        begin
+            dispVal <= A;
+        end
+        else if(BTN[3])
+        begin
+            dispVal <= B;
+        end
+        else if(SW[15])
         begin
             //output
-            fxn <= SW[2:0]; 
             dispVal <= out;
         end
         else
         begin
             dispVal <= SW[5:0];
-            if(BTN[1])
-            begin
-                A <= SW[5:0];
-            end    
-            if(BTN[2])
-            begin
-                B <= SW[5:0];
-            end
         end
-        
-        LED[15:10] <= out;
-        LED[5:0] <= SW[5:0];
-        
+
+        if(BTN[1])
+            A <= SW[5:0];
+        else
+            A <= A;
+
+        if(BTN[2])
+            B <= SW[5:0];
+        else
+            B <= B;
+
+        if(BTN[4])
+            fxn <= SW[2:0];
+        else
+            fxn <= fxn;
     end
+
+    
+    
+    
     
 endmodule

@@ -65,18 +65,16 @@ start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
-  set_param board.repoPaths E:/Vivado/vivado-boards-master/new/board_files
+  set_param xicom.use_bs_reader 1
   create_project -in_memory -part xc7a35tcpg236-1
-  set_property board_part_repo_paths E:/Vivado/vivado-boards-master/new/board_files [current_project]
-  set_property board_part digilentinc.com:basys3:part0:1.1 [current_project]
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir E:/Vivado/Assignment1/Assignment1.cache/wt [current_project]
-  set_property parent.project_path E:/Vivado/Assignment1/Assignment1.xpr [current_project]
-  set_property ip_output_repo E:/Vivado/Assignment1/Assignment1.cache/ip [current_project]
+  set_property webtalk.parent_dir C:/Users/Daniel/Documents/College/3C7/3C7-Assignment-1/Assignment1.cache/wt [current_project]
+  set_property parent.project_path C:/Users/Daniel/Documents/College/3C7/3C7-Assignment-1/Assignment1.xpr [current_project]
+  set_property ip_output_repo C:/Users/Daniel/Documents/College/3C7/3C7-Assignment-1/Assignment1.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
-  add_files -quiet E:/Vivado/Assignment1/Assignment1.runs/synth_1/BoardMap.dcp
-  read_xdc E:/Vivado/Assignment1/Basys3.xdc
+  add_files -quiet C:/Users/Daniel/Documents/College/3C7/3C7-Assignment-1/Assignment1.runs/synth_1/BoardMap.dcp
+  read_xdc C:/Users/Daniel/Documents/College/3C7/3C7-Assignment-1/Basys3.xdc
   link_design -top BoardMap -part xc7a35tcpg236-1
   close_msg_db -file init_design.pb
 } RESULT]

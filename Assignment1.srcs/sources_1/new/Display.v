@@ -42,9 +42,9 @@ module Display(
     always@*
     begin
 	    case(SSEG_AN[1:0])
-            2'b01: nibble = {0,0,num[5:4]};
+            2'b01: nibble = {2'b00,num[5:4]};
             2'b10: nibble = num[3:0];
-        default: nibble = {0,0,0,0};
+            default: nibble = 4'b0000;
         endcase
     end
     

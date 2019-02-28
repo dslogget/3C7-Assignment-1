@@ -1,0 +1,1363 @@
+/*
+
+Xilinx Vivado v2017.4 (64-bit) [Major: 2017, Minor: 4]
+SW Build: 2086221 on Fri Dec 15 20:55:39 MST 2017
+IP Build: 2085800 on Fri Dec 15 22:25:07 MST 2017
+
+Process ID: 9980
+License: Customer
+
+Current time: 	Thu Feb 28 17:40:42 GMT 2019
+Time zone: 	Greenwich Mean Time (Europe/London)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 2048x1152
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 390 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	C:/Xilinx/Vivado/2017.4/tps/win64/jre
+JVM executable location: 	C:/Xilinx/Vivado/2017.4/tps/win64/jre/bin/java.exe
+
+User name: 	Daniel
+User home directory: C:/Users/Daniel
+User working directory: C:/Users/Daniel/Documents/College/3C7/3C7-Assignment-1
+User country: 	IE
+User language: 	en
+User locale: 	en_IE
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2017.4
+RDI_DATADIR: C:/Xilinx/Vivado/2017.4/data
+RDI_BINDIR: C:/Xilinx/Vivado/2017.4/bin
+
+Vivado preferences file location: C:/Users/Daniel/AppData/Roaming/Xilinx/Vivado/2017.4/vivado.xml
+Vivado preferences directory: C:/Users/Daniel/AppData/Roaming/Xilinx/Vivado/2017.4/
+Vivado layouts directory: C:/Users/Daniel/AppData/Roaming/Xilinx/Vivado/2017.4/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2017.4/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/Daniel/Documents/College/3C7/3C7-Assignment-1/vivado.log
+Vivado journal file location: 	C:/Users/Daniel/Documents/College/3C7/3C7-Assignment-1/vivado.jou
+Engine tmp dir: 	C:/Users/Daniel/Documents/College/3C7/3C7-Assignment-1/.Xil/Vivado-9980-Daniel-PC
+
+GUI allocated memory:	152 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 461 MB
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// WARNING: HTimer (WrapperUtils Delayed Delete Timer) is taking too long to process. Increasing delay to 2000 ms.
+// [GUI Memory]: 25 MB (+24172kb) [00:00:09]
+// [Engine Memory]: 297 MB (+159496kb) [00:00:10]
+// WARNING: HTimer (WrapperUtils Delayed Delete Timer) is taking too long to process. Increasing delay to 3000 ms.
+// TclEventType: START_GUI
+// [GUI Memory]: 42 MB (+16155kb) [00:01:32]
+// [Engine Memory]: 429 MB (+123623kb) [00:01:32]
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bs (cj):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\Daniel\Documents\College\3C7\3C7-Assignment-1\Assignment1.xpr. Version: Vivado v2017.4 
+// WARNING: HTimer (HSTRUtils Dump STR Log Timer) is taking too long to process. Increasing delay to 4000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 461 MB. GUI used memory: 31 MB. Current time: 2/28/19 5:40:43 PM GMT
+// Tcl Message: open_project C:/Users/Daniel/Documents/College/3C7/3C7-Assignment-1/Assignment1.xpr 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project C:/Users/Daniel/Documents/College/3C7/3C7-Assignment-1/Assignment1.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'E:/Vivado/Assignment1' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// [Engine Memory]: 467 MB (+16659kb) [00:01:44]
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 507 MB (+17612kb) [00:02:03]
+// [GUI Memory]: 51 MB (+7362kb) [00:02:07]
+// [GUI Memory]: 54 MB (+94kb) [00:02:07]
+// [Engine Memory]: 542 MB (+10554kb) [00:02:07]
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.4/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 553 MB. GUI used memory: 37 MB. Current time: 2/28/19 5:41:13 PM GMT
+// Project name: Assignment1; location: C:/Users/Daniel/Documents/College/3C7/3C7-Assignment-1; part: xc7a35tcpg236-1
+// Tcl Message: open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:36 . Memory (MB): peak = 725.680 ; gain = 70.371 
+dismissDialog("Open Project"); // bs (cj)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// a (cj): Critical Messages: addNotify
+// TclEventType: DG_GRAPH_GENERATED
+// [GUI Memory]: 64 MB (+7334kb) [00:02:22]
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 11 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (a)
+dismissDialog("Critical Messages"); // a (cj)
+// [GUI Memory]: 87 MB (+21506kb) [00:02:35]
+// Elapsed time: 15 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // U (q, cj)
+selectMenu(PAResourceItoN.MainMenuMgr_REPORT, "Report"); // Z (cj)
+selectMenu(RDIResourceCommand.RDICommands_CUSTOM_COMMANDS, "Custom Commands"); // Z (cj)
+// HMemoryUtils.trashcanNow. Engine heap size: 598 MB. GUI used memory: 43 MB. Current time: 2/28/19 5:41:47 PM GMT
+selectMenu(RDIResourceCommand.RDICommands_CUSTOM_COMMANDS, "Custom Commands"); // Z (cj)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // U (q, cj)
+// [Engine Memory]: 598 MB (+30045kb) [00:02:43]
+selectMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // U (q, cj)
+dismissMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // U (q, cj)
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U (q, cj)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U (q, cj)
+selectButton(PAResourceQtoS.RunGadget_SHOW_WARNING_AND_ERROR_MESSAGES_IN_MESSAGES, "2 warnings"); // h (N, cj)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+// Elapsed time: 13 seconds
+selectButton(PAResourceQtoS.RunGadget_SHOW_WARNING_AND_ERROR_MESSAGES_IN_MESSAGES, "28 warnings"); // h (N, cj)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-1849] concatenation with unsized literal; will interpret as 32 bits [E:/Vivado/Assignment1/Assignment1.srcs/sources_1/new/Display.v:50]. ]", 2, true); // ah (O, cj) - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;E:\Vivado\Assignment1\Assignment1.srcs\sources_1\new\Display.v;-;;-;16;-;line;-;50;-;;-;16;-;"); // ah (O, cj)
+// ac (cj): Unable to Open File: addNotify
+selectButton(PAResourceOtoP.OpenFileAction_OK, "OK"); // a (ac)
+dismissDialog("Unable to Open File"); // ac (cj)
+// PAPropertyPanels.initPanels (BoardMap.v) elapsed time: 2.3s
+// Elapsed time: 14 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, BoardMap (BoardMap.v)]", 1, true); // B (D, cj) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, BoardMap (BoardMap.v)]", 1, true, false, false, false, false, true); // B (D, cj) - Double Click - Node
+selectCodeEditor("BoardMap.v", 196, 392); // cd (w, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, BoardMap (BoardMap.v), disp : Display (Display.v)]", 2, false); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, BoardMap (BoardMap.v), disp : Display (Display.v)]", 2, false, false, false, false, false, true); // B (D, cj) - Double Click
+// HMemoryUtils.trashcanNow. Engine heap size: 622 MB. GUI used memory: 46 MB. Current time: 2/28/19 5:42:52 PM GMT
+// Elapsed time: 14 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 6); // B (D, cj)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 6); // B (D, cj)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Settings]", 1, false); // u (O, cj)
+// Run Command: RDIResourceCommand.RDICommands_SETTINGS
+// Tcl Command: 'rdi::info_commands {device::*}'
+// Tcl Command: 'rdi::info_commands {debug::*}'
+// Tcl Command: 'rdi::info_commands {*}'
+// v (cj): Settings: addNotify
+// 'dw' command handler elapsed time: 8 seconds
+// [Engine Memory]: 651 MB (+24482kb) [00:04:08]
+// HMemoryUtils.trashcanNow. Engine heap size: 652 MB. GUI used memory: 60 MB. Current time: 2/28/19 5:43:13 PM GMT
+// Elapsed time: 20 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (v)
+// [GUI Memory]: 94 MB (+2672kb) [00:04:21]
+dismissDialog("Settings"); // v (cj)
+// Elapsed time: 10 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, update_compile_order -fileset sources_1. , [filemgmt 56-199] Attempt to get parsing info during refresh. On-the-fly syntax checking information may be incorrect. [C:/Users/Daniel/Documents/College/3C7/3C7-Assignment-1/Assignment1.srcs/sources_1/new/Display.v:]. ]", 3, true); // ah (O, cj) - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\Daniel\Documents\College\3C7\3C7-Assignment-1\Assignment1.srcs\sources_1\new\Display.v;-;;-;16;-;"); // ah (O, cj)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-1849] concatenation with unsized literal; will interpret as 32 bits [E:/Vivado/Assignment1/Assignment1.srcs/sources_1/new/Display.v:50]. ]", 5, true); // ah (O, cj) - Node
+selectCodeEditor("Display.v", 188, 477); // cd (w, cj)
+selectCodeEditor("Display.v", 44, 434); // cd (w, cj)
+// Elapsed time: 19 seconds
+selectCodeEditor("Display.v", 228, 196); // cd (w, cj)
+selectCodeEditor("Display.v", 243, 230); // cd (w, cj)
+// Elapsed time: 23 seconds
+selectCodeEditor("Display.v", 304, 470); // cd (w, cj)
+selectCodeEditor("Display.v", 27, 443); // cd (w, cj)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// [GUI Memory]: 100 MB (+846kb) [00:05:40]
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (O, cj)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation]", 2); // u (O, cj)
+// [GUI Memory]: 109 MB (+4063kb) [00:05:42]
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// x (cj): Run Synthesis: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (x)
+// bs (cj):  Resetting Runs : addNotify
+dismissDialog("Run Synthesis"); // x (cj)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// f (cj): Launch Runs: addNotify
+selectComboBox(PAResourceItoN.NumJobsChooser_NUMBER_OF_JOBS, "8", 7); // e (aU, f)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bs (cj):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cj)
+// Tcl Message: launch_runs synth_1 -jobs 8 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Thu Feb 28 17:44:58 2019] Launched synth_1... Run output will be captured here: C:/Users/Daniel/Documents/College/3C7/3C7-Assignment-1/Assignment1.runs/synth_1/runme.log 
+// 'k' command handler elapsed time: 7 seconds
+dismissDialog("Starting Design Runs"); // bs (cj)
+selectTab((HResource) null, (HResource) null, "Design Runs", 4); // aF (Q, cj)
+// Elapsed time: 24 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis]", 13, true, false, false, false, true, false); // u (O, cj) - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_SYNTH_SETTINGS, "Synthesis Settings..."); // ac (ai, cj)
+// Run Command: PAResourceCommand.PACommandNames_SYNTH_SETTINGS
+// v (cj): Settings: addNotify
+dismissDialog("Settings"); // v (cj)
+// [GUI Memory]: 116 MB (+1577kb) [00:06:44]
+// [GUI Memory]: 123 MB (+1992kb) [00:06:44]
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking too long to process. Increasing delay to 2000 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking too long to process. Increasing delay to 3000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 3000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 3000 ms.
+// TclEventType: RUN_COMPLETED
+// ah (cj): Synthesis Completed: addNotify
+// Elapsed time: 74 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_GOTO_NETLIST_DESIGN, "Open Synthesized Design"); // a (N, ah)
+selectRadioButton(PAResourceCommand.PACommandNames_REPORTS_WINDOW, "View Reports"); // a (N, ah)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_REPORTS_WINDOW
+// [GUI Memory]: 132 MB (+2002kb) [00:07:52]
+dismissDialog("Synthesis Completed"); // ah (cj)
+// [GUI Memory]: 139 MB (+904kb) [00:07:55]
+selectTab((HResource) null, (HResource) null, "Messages", 1); // aF (Q, cj)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-1849] concatenation with unsized literal; will interpret as 32 bits [C:/Users/Daniel/Documents/College/3C7/3C7-Assignment-1/Assignment1.srcs/sources_1/new/Display.v:45]. ]", 5, false); // ah (O, cj)
+selectCodeEditor("Display.v", 152, 385); // cd (w, cj)
+// [GUI Memory]: 156 MB (+10072kb) [00:08:04]
+selectCodeEditor("Display.v", 205, 377); // cd (w, cj)
+// Elapsed time: 17 seconds
+selectCodeEditor("Display.v", 277, 436); // cd (w, cj)
+selectCodeEditor("Display.v", 305, 404); // cd (w, cj)
+selectCodeEditor("Display.v", 222, 372); // cd (w, cj)
+selectCodeEditor("Display.v", 205, 387); // cd (w, cj)
+selectCodeEditor("Display.v", 125, 401); // cd (w, cj)
+selectCodeEditor("Display.v", 88, 453); // cd (w, cj)
+selectCodeEditor("Display.v", 16, 400); // cd (w, cj)
+selectCodeEditor("Display.v", 278, 421); // cd (w, cj)
+selectCodeEditor("Display.v", 246, 440); // cd (w, cj)
+selectCodeEditor("Display.v", 312, 433); // cd (w, cj)
+selectCodeEditor("Display.v", 275, 420); // cd (w, cj)
+selectCodeEditor("Display.v", 298, 404); // cd (w, cj)
+// Elapsed time: 10 seconds
+selectCodeEditor("Display.v", 212, 403); // cd (w, cj)
+// Elapsed time: 14 seconds
+selectCodeEditor("Display.v", 241, 398); // cd (w, cj)
+typeControlKey((HResource) null, "Display.v", 'c'); // cd (w, cj)
+selectCodeEditor("Display.v", 296, 419); // cd (w, cj)
+// HMemoryUtils.trashcanNow. Engine heap size: 673 MB. GUI used memory: 62 MB. Current time: 2/28/19 5:48:22 PM GMT
+selectCodeEditor("Display.v", 193, 416); // cd (w, cj)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-3331] design BoardMap has unconnected port SW[14]. ]", 6, true); // ah (O, cj) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-327] inferring latch for variable 'x_reg' [C:/Users/Daniel/Documents/College/3C7/3C7-Assignment-1/Assignment1.srcs/sources_1/new/ALUBase.v:45]. ]", 7, true); // ah (O, cj) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-327] inferring latch for variable 'x_reg' [C:/Users/Daniel/Documents/College/3C7/3C7-Assignment-1/Assignment1.srcs/sources_1/new/ALUBase.v:45]. ]", 7, true); // ah (O, cj) - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\Daniel\Documents\College\3C7\3C7-Assignment-1\Assignment1.srcs\sources_1\new\ALUBase.v;-;;-;16;-;line;-;45;-;;-;16;-;"); // ah (O, cj)
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking too long to process. Increasing delay to 2000 ms.
+// Elapsed time: 57 seconds
+selectCodeEditor("ALUBase.v", 139, 348); // cd (w, cj)
+selectCodeEditor("ALUBase.v", 82, 500); // cd (w, cj)
+typeControlKey((HResource) null, "ALUBase.v", 'c'); // cd (w, cj)
+selectCodeEditor("ALUBase.v", 148, 352); // cd (w, cj)
+typeControlKey((HResource) null, "ALUBase.v", 'v'); // cd (w, cj)
+typeControlKey((HResource) null, "ALUBase.v", 'v'); // cd (w, cj)
+selectCodeEditor("ALUBase.v", 137, 386); // cd (w, cj)
+selectCodeEditor("ALUBase.v", 257, 302); // cd (w, cj)
+selectCodeEditor("ALUBase.v", 213, 290); // cd (w, cj)
+selectCodeEditor("ALUBase.v", 208, 280); // cd (w, cj)
+// Elapsed time: 15 seconds
+selectCodeEditor("ALUBase.v", 193, 374); // cd (w, cj)
+selectCodeEditor("ALUBase.v", 133, 402); // cd (w, cj)
+selectCodeEditor("ALUBase.v", 126, 277); // cd (w, cj)
+selectCodeEditor("ALUBase.v", 127, 329); // cd (w, cj)
+selectCodeEditor("ALUBase.v", 209, 383); // cd (w, cj)
+selectCodeEditor("ALUBase.v", 121, 448); // cd (w, cj)
+selectCodeEditor("ALUBase.v", 127, 452); // cd (w, cj)
+selectCodeEditor("ALUBase.v", 127, 328); // cd (w, cj)
+selectCodeEditor("ALUBase.v", 204, 281); // cd (w, cj)
+selectCodeEditor("ALUBase.v", 172, 318); // cd (w, cj)
+selectCodeEditor("ALUBase.v", 84, 59); // cd (w, cj)
+selectCodeEditor("ALUBase.v", 196, 60); // cd (w, cj)
+selectCodeEditor("ALUBase.v", 85, 75); // cd (w, cj)
+typeControlKey((HResource) null, "ALUBase.v", 'c'); // cd (w, cj)
+selectCodeEditor("ALUBase.v", 84, 110); // cd (w, cj)
+typeControlKey((HResource) null, "ALUBase.v", 'c'); // cd (w, cj)
+selectCodeEditor("ALUBase.v", 121, 181); // cd (w, cj)
+typeControlKey((HResource) null, "ALUBase.v", 'v'); // cd (w, cj)
+selectCodeEditor("ALUBase.v", 261, 213); // cd (w, cj)
+selectCodeEditor("ALUBase.v", 90, 232); // cd (w, cj)
+// Elapsed time: 14 seconds
+selectCodeEditor("ALUBase.v", 85, 313); // cd (w, cj)
+selectCodeEditor("ALUBase.v", 92, 400); // cd (w, cj)
+typeControlKey((HResource) null, "ALUBase.v", 'v'); // cd (w, cj)
+selectCodeEditor("ALUBase.v", 106, 435); // cd (w, cj)
+selectCodeEditor("ALUBase.v", 257, 405); // cd (w, cj)
+selectCodeEditor("ALUBase.v", 110, 534); // cd (w, cj)
+// Elapsed time: 18 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-6014] Unused sequential element cntr_reg was removed.  [C:/Users/Daniel/Documents/College/3C7/3C7-Assignment-1/Assignment1.srcs/sources_1/new/Display.v:35]. ]", 8, true); // ah (O, cj) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-6014] Unused sequential element cntr_reg was removed.  [C:/Users/Daniel/Documents/College/3C7/3C7-Assignment-1/Assignment1.srcs/sources_1/new/Display.v:35]. ]", 8, true); // ah (O, cj) - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\Daniel\Documents\College\3C7\3C7-Assignment-1\Assignment1.srcs\sources_1\new\Display.v;-;;-;16;-;line;-;35;-;;-;16;-;"); // ah (O, cj)
+// Elapsed time: 34 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-3917] design BoardMap has port SSEG_AN[3] driven by constant 1. ]", 9, true); // ah (O, cj) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-3917] design BoardMap has port SSEG_AN[3] driven by constant 1. ]", 9, true); // ah (O, cj) - Node
+selectCodeEditor("Display.v", 494, 271); // cd (w, cj)
+// Elapsed time: 11 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (O, cj)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug]", 6); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// am (cj): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (am)
+// bs (cj):  Save Constraints : addNotify
+// TclEventType: DG_GRAPH_STALE
+// bs (cj):  Resetting Runs : addNotify
+dismissDialog("Save Project"); // am (cj)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_MODIFY
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_MODIFY
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cj): Launch Runs: addNotify
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bs (cj):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cj)
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs synth_1 -jobs 8 
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Thu Feb 28 17:52:40 2019] Launched synth_1... Run output will be captured here: C:/Users/Daniel/Documents/College/3C7/3C7-Assignment-1/Assignment1.runs/synth_1/runme.log 
+// 'k' command handler elapsed time: 5 seconds
+dismissDialog("Starting Design Runs"); // bs (cj)
+// Elapsed time: 18 seconds
+selectTab((HResource) null, (HResource) null, "Design Runs", 4); // aF (Q, cj)
+// [Engine Memory]: 686 MB (+1672kb) [00:13:56]
+selectTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "impl_1 ; constrs_1 ; Not started ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; Vivado Implementation Defaults (Vivado Implementation 2017) ; Vivado Implementation Default Reports (Vivado Implementation 2017) ; xc7a35tcpg236-1 ; Default settings for Implementation.", 1, "impl_1", 0, false); // ax (O, cj)
+// PAPropertyPanels.initPanels (impl_1) elapsed time: 0.4s
+selectTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "impl_1 ; constrs_1 ; Not started ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; Vivado Implementation Defaults (Vivado Implementation 2017) ; Vivado Implementation Default Reports (Vivado Implementation 2017) ; xc7a35tcpg236-1 ; Default settings for Implementation.", 1, "impl_1", 0, false); // ax (O, cj)
+selectTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "impl_1 ; constrs_1 ; Not started ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; Vivado Implementation Defaults (Vivado Implementation 2017) ; Vivado Implementation Default Reports (Vivado Implementation 2017) ; xc7a35tcpg236-1 ; Default settings for Implementation.", 1, "Not started", 2, false, false, false, false, true, false); // ax (O, cj) - Popup Trigger
+// Elapsed time: 25 seconds
+selectCodeEditor("Display.v", 205, 252); // cd (w, cj)
+// TclEventType: RUN_COMPLETED
+// ah (cj): Synthesis Completed: addNotify
+// Elapsed time: 13 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION, "Run Implementation"); // a (N, ah)
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Synthesis Completed"); // ah (cj)
+selectTab((HResource) null, (HResource) null, "Messages", 1); // aF (Q, cj)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-327] inferring latch for variable 'x_reg' [C:/Users/Daniel/Documents/College/3C7/3C7-Assignment-1/Assignment1.srcs/sources_1/new/ALUBase.v:45]. ]", 6, true); // ah (O, cj) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-327] inferring latch for variable 'x_reg' [C:/Users/Daniel/Documents/College/3C7/3C7-Assignment-1/Assignment1.srcs/sources_1/new/ALUBase.v:45]. ]", 6, true); // ah (O, cj) - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\Daniel\Documents\College\3C7\3C7-Assignment-1\Assignment1.srcs\sources_1\new\ALUBase.v;-;;-;16;-;line;-;45;-;;-;16;-;"); // ah (O, cj)
+// Elapsed time: 13 seconds
+selectCodeEditor("ALUBase.v", 139, 311); // cd (w, cj)
+// Elapsed time: 31 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-6014] Unused sequential element cntr_reg was removed.  [C:/Users/Daniel/Documents/College/3C7/3C7-Assignment-1/Assignment1.srcs/sources_1/new/Display.v:35]. ]", 7, true); // ah (O, cj) - Node
+expandTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, open_project C:/Users/Daniel/Documents/College/3C7/3C7-Assignment-1/Assignment1.xpr. ]", 1); // ah (O, cj)
+collapseTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, open_project C:/Users/Daniel/Documents/College/3C7/3C7-Assignment-1/Assignment1.xpr. ]", 1); // ah (O, cj)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-3331] design BoardMap has unconnected port SW[14]. ]", 5, true); // ah (O, cj) - Node
+selectTab((HResource) null, (HResource) null, "Log", 2); // aF (Q, cj)
+selectTab((HResource) null, (HResource) null, "Reports", 3); // aF (Q, cj)
+selectTab((HResource) null, (HResource) null, "Design Runs", 4); // aF (Q, cj)
+selectTab((HResource) null, (HResource) null, "Tcl Console", 0); // aF (Q, cj)
+selectCodeEditor("ALUBase.v", 235, 300); // cd (w, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "BoardMap.v", 1); // k (j, cj)
+selectCodeEditor("BoardMap.v", 142, 129); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 199, 180); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 201, 187); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 209, 179); // cd (w, cj)
+// Elapsed time: 10 seconds
+selectCodeEditor("BoardMap.v", 208, 432); // cd (w, cj)
+// Elapsed time: 15 seconds
+selectCodeEditor("BoardMap.v", 196, 228); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 188, 230); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 188, 230); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 119, 452); // cd (w, cj)
+// Elapsed time: 15 seconds
+selectCodeEditor("BoardMap.v", 86, 230); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 119, 499); // cd (w, cj)
+typeControlKey((HResource) null, "BoardMap.v", 'v'); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 203, 466); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 92, 485); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 205, 488); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 217, 482); // cd (w, cj)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("BoardMap.v", 282, 439); // cd (w, cj)
+// Elapsed time: 14 seconds
+selectCodeEditor("BoardMap.v", 136, 404); // cd (w, cj)
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 4000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 4000 ms.
+// WARNING: HTimer (HSTRUtils Dump STR Log Timer) is taking too long to process. Increasing delay to 5000 ms.
+// Elapsed time: 31 seconds
+selectCodeEditor("BoardMap.v", 34, 490); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 88, 485); // cd (w, cj)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// Elapsed time: 10 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, cj)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// TclEventType: DG_GRAPH_GENERATED
+// x (cj): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (x)
+// bs (cj):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // x (cj)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cj): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cv' command handler elapsed time: 4 seconds
+dismissDialog("Launch Runs"); // f (cj)
+// TclEventType: RUN_LAUNCH
+// bs (cj):  Generate Bitstream : addNotify
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Thu Feb 28 17:57:55 2019] Launched synth_1... Run output will be captured here: C:/Users/Daniel/Documents/College/3C7/3C7-Assignment-1/Assignment1.runs/synth_1/runme.log [Thu Feb 28 17:57:55 2019] Launched impl_1... Run output will be captured here: C:/Users/Daniel/Documents/College/3C7/3C7-Assignment-1/Assignment1.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bs (cj)
+selectTab((HResource) null, (HResource) null, "Design Runs", 4); // aF (Q, cj)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking too long to process. Increasing delay to 2000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 693 MB. GUI used memory: 66 MB. Current time: 2/28/19 6:00:52 PM GMT
+// Elapsed time: 183 seconds
+collapseTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 21); // u (O, cj)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 21); // u (O, cj)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Open Target]", 22, false); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+// TclEventType: RUN_COMPLETED
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ac (ai, cj)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Tcl Command: 'load_features labtools'
+// TclEventType: LOAD_FEATURE
+// bs (cj):  Open Hardware Manager : addNotify
+// TclEventType: HW_SESSION_OPEN
+// Tcl Message: open_hw 
+// 'Q' command handler elapsed time: 4 seconds
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+dismissDialog("Open Hardware Manager"); // bs (cj)
+// Tcl Message: connect_hw_server 
+// bs (cj):  Auto Connect : addNotify
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// Tcl Message: INFO: [Labtools 27-2222] Launching hw_server... 
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2017.4   **** Build date : Dec 15 2017-21:08:27     ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.   
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 848.980 ; gain = 1.328 
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183A75A3BA 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/Daniel/Documents/College/3C7/3C7-Assignment-1/Assignment1.runs/impl_1/BoardMap.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: current_hw_device [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// [Engine Memory]: 1,279 MB (+586353kb) [00:22:12]
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// Elapsed time: 10 seconds
+dismissDialog("Auto Connect"); // bs (cj)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,279 MB. GUI used memory: 70 MB. Current time: 2/28/19 6:01:18 PM GMT
+// ah (cj): Bitstream Generation Completed: addNotify
+dismissDialog("Bitstream Generation Completed"); // ah (cj)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 23, false); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7a35t_0"); // ac (ai, cj)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bA (cj): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bA)
+// bs (cj):  Program Device : addNotify
+dismissDialog("Program Device"); // bA (cj)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/Daniel/Documents/College/3C7/3C7-Assignment-1/Assignment1.runs/impl_1/BoardMap.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 4 seconds
+dismissDialog("Program Device"); // bs (cj)
+// Elapsed time: 69 seconds
+selectCodeEditor("BoardMap.v", 164, 245); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 170, 251); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 143, 228); // cd (w, cj)
+// Elapsed time: 27 seconds
+selectCodeEditor("BoardMap.v", 521, 141); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 393, 142); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 255, 143); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 203, 94); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 90, 14); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 93, 75); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 91, 161); // cd (w, cj)
+// Elapsed time: 61 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // u (O, cj) - Node
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation]", 5); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_GOTO_PROJECT_MANAGER
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 6); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, Basys3.xdc]", 8, false); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, Basys3.xdc]", 8, false, false, false, false, false, true); // B (D, cj) - Double Click
+selectCodeEditor("Basys3.xdc", 415, 161); // cd (w, cj)
+selectCodeEditor("Basys3.xdc", 429, 214); // cd (w, cj)
+selectCodeEditor("Basys3.xdc", 357, 228); // cd (w, cj)
+selectCodeEditor("Basys3.xdc", 367, 381); // cd (w, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ALUBase.v", 3); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Display.v", 2); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "BoardMap.v", 1); // k (j, cj)
+selectCodeEditor("BoardMap.v", 144, 214); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 139, 277); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 108, 23); // cd (w, cj)
+// Elapsed time: 24 seconds
+selectCodeEditor("BoardMap.v", 83, 248); // cd (w, cj)
+typeControlKey((HResource) null, "BoardMap.v", 'c'); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 87, 58); // cd (w, cj)
+typeControlKey((HResource) null, "BoardMap.v", 'v'); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 82, 125); // cd (w, cj)
+typeControlKey((HResource) null, "BoardMap.v", 'v'); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 175, 62); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 175, 62, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("BoardMap.v", 177, 129); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 177, 129, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("BoardMap.v", 223, 151); // cd (w, cj)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 10 seconds
+selectCodeEditor("BoardMap.v", 93, 149); // cd (w, cj)
+// Elapsed time: 26 seconds
+selectCodeEditor("BoardMap.v", 168, 116); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 149, 211); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 92, 145); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 91, 111); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 235, 275); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 140, 432); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 145, 366); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 133, 300); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 135, 232); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 150, 185); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 97, 395); // cd (w, cj)
+typeControlKey((HResource) null, "BoardMap.v", 'v'); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 150, 402); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 120, 405); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 148, 320); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 144, 388); // cd (w, cj)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 17 seconds
+selectCodeEditor("BoardMap.v", 94, 399); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 216, 180); // cd (w, cj)
+typeControlKey((HResource) null, "BoardMap.v", 'v'); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 80, 198); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 84, 199); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 95, 196); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 83, 240); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 75, 460); // cd (w, cj)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// Elapsed time: 26 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, cj)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation]", 5); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// x (cj): Synthesis is Out-of-date: addNotify
+// TclEventType: DG_GRAPH_GENERATED
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (x)
+// bs (cj):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // x (cj)
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// f (cj): Launch Runs: addNotify
+// Elapsed time: 21 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cv' command handler elapsed time: 23 seconds
+dismissDialog("Launch Runs"); // f (cj)
+// bs (cj):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Thu Feb 28 18:08:11 2019] Launched synth_1... Run output will be captured here: C:/Users/Daniel/Documents/College/3C7/3C7-Assignment-1/Assignment1.runs/synth_1/runme.log [Thu Feb 28 18:08:11 2019] Launched impl_1... Run output will be captured here: C:/Users/Daniel/Documents/College/3C7/3C7-Assignment-1/Assignment1.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bs (cj)
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking too long to process. Increasing delay to 2000 ms.
+// WARNING: HTimer (ExpRunMonitor Open Timer) is taking too long to process. Increasing delay to 6000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 5000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 5000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 6000 ms.
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// WARNING: HTimer (ExpRunMonitor Open Timer) is taking too long to process. Increasing delay to 7000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 6000 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking too long to process. Increasing delay to 3000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 7000 ms.
+// TclEventType: RUN_FAILED
+// ah (cj): Implementation Failed: addNotify
+// Elapsed time: 159 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Implementation Failed"); // ah (cj)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Place Design, [Place 30-574] Poor placement for routing between an IO pin and BUFG. If this sub optimal condition is acceptable for this design, you may use the CLOCK_DEDICATED_ROUTE constraint in the .xdc file to demote this message to a WARNING. However, the use of this override is highly discouraged. These examples can be used directly in the .xdc file to override this clock rule.. 	< set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets BTN_IBUF[0]] >. . 	BTN_IBUF[0]_inst (IBUF.O) is locked to IOB_X0Y15. 	 and BTN_IBUF_BUFG[0]_inst (BUFG.I) is provisionally placed by clockplacer on BUFGCTRL_X0Y0. ]", 5, true); // ah (O, cj) - Node
+selectCodeEditor("BoardMap.v", 94, 233); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 104, 263); // cd (w, cj)
+// Elapsed time: 145 seconds
+selectCodeEditor("BoardMap.v", 109, 348); // cd (w, cj)
+// WARNING: HTimer (HSTRUtils Dump STR Log Timer) is taking too long to process. Increasing delay to 6000 ms.
+// Elapsed time: 11 seconds
+selectCodeEditor("BoardMap.v", 54, 416); // cd (w, cj)
+// Elapsed time: 15 seconds
+selectCodeEditor("BoardMap.v", 95, 247); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 95, 247, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("BoardMap.v", 84, 250); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 84, 250, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("BoardMap.v", 92, 224); // cd (w, cj)
+typeControlKey((HResource) null, "BoardMap.v", 'v'); // cd (w, cj)
+// Elapsed time: 10 seconds
+selectCodeEditor("BoardMap.v", 187, 288); // cd (w, cj)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, cj)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis]", 4); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// am (cj): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (am)
+// bs (cj):  Save Constraints : addNotify
+// TclEventType: DG_GRAPH_STALE
+// x (cj): No Implementation Results Available: addNotify
+dismissDialog("Save Project"); // am (cj)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectButton(RDIResource.BaseDialog_NO, "No"); // a (x)
+// 'cv' command handler elapsed time: 6 seconds
+dismissDialog("No Implementation Results Available"); // x (cj)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 17, false); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// x (cj): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (x)
+dismissDialog("Synthesis is Out-of-date"); // x (cj)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// x (cj): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (x)
+// bs (cj):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // x (cj)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cj): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cv' command handler elapsed time: 3 seconds
+dismissDialog("Launch Runs"); // f (cj)
+// bs (cj):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Thu Feb 28 18:14:31 2019] Launched synth_1... Run output will be captured here: C:/Users/Daniel/Documents/College/3C7/3C7-Assignment-1/Assignment1.runs/synth_1/runme.log [Thu Feb 28 18:14:31 2019] Launched impl_1... Run output will be captured here: C:/Users/Daniel/Documents/College/3C7/3C7-Assignment-1/Assignment1.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bs (cj)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_FAILED
+// ah (cj): Implementation Failed: addNotify
+// Elapsed time: 134 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_LOG_WINDOW, "View Log"); // a (N, ah)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_LOG_WINDOW
+dismissDialog("Implementation Failed"); // ah (cj)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Place Design, [Place 30-574] Poor placement for routing between an IO pin and BUFG. If this sub optimal condition is acceptable for this design, you may use the CLOCK_DEDICATED_ROUTE constraint in the .xdc file to demote this message to a WARNING. However, the use of this override is highly discouraged. These examples can be used directly in the .xdc file to override this clock rule.. 	< set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets BTN_IBUF[0]] >. . 	BTN_IBUF[0]_inst (IBUF.O) is locked to IOB_X0Y15. 	 and BTN_IBUF_BUFG[0]_inst (BUFG.I) is provisionally placed by clockplacer on BUFGCTRL_X0Y0. ]", 5, true); // ah (O, cj) - Node
+// Elapsed time: 11 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Basys3.xdc", 4); // k (j, cj)
+// Elapsed time: 10 seconds
+selectCodeEditor("Basys3.xdc", 355, 151, false, false, false, true, false); // cd (w, cj) - Popup Trigger
+selectCodeEditor("Basys3.xdc", 311, 148); // cd (w, cj)
+// Elapsed time: 11 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ALUBase.v", 3); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "BoardMap.v", 1); // k (j, cj)
+selectCodeEditor("BoardMap.v", 151, 253, false, false, false, true, false); // cd (w, cj) - Popup Trigger
+selectCodeEditor("BoardMap.v", 348, 194); // cd (w, cj)
+// Elapsed time: 19 seconds
+selectCodeEditor("BoardMap.v", 167, 181); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 180, 223); // cd (w, cj)
+// Elapsed time: 10 seconds
+selectCodeEditor("BoardMap.v", 54, 409); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 56, 402); // cd (w, cj)
+// Elapsed time: 10 seconds
+selectCodeEditor("BoardMap.v", 109, 455); // cd (w, cj)
+typeControlKey((HResource) null, "BoardMap.v", 'v'); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 56, 433); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 67, 96); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 86, 92); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 92, 72); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 86, 95); // cd (w, cj)
+typeControlKey((HResource) null, "BoardMap.v", 'v'); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 25, 114); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 175, 232); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 110, 226); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 102, 266); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 91, 403); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 32, 468); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 237, 359); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 99, 297); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 226, 332); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 83, 448); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 101, 224); // cd (w, cj)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 71 seconds
+selectCodeEditor("BoardMap.v", 233, 405); // cd (w, cj)
+// Elapsed time: 10 seconds
+selectCodeEditor("BoardMap.v", 100, 302); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 89, 299); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 86, 299); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 69, 233); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 87, 285); // cd (w, cj)
+// Elapsed time: 13 seconds
+selectCodeEditor("BoardMap.v", 109, 246); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 88, 280); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 55, 244); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 70, 262); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 71, 276); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 84, 212); // cd (w, cj)
+typeControlKey((HResource) null, "BoardMap.v", 'c'); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 48, 287); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 36, 279); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 36, 279, false, false, false, false, true); // cd (w, cj) - Double Click
+typeControlKey((HResource) null, "BoardMap.v", 'v'); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 98, 316); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 81, 352); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 54, 320); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 85, 328); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 64, 269); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 67, 262); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 167, 255); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 180, 251); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 80, 247); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 100, 249); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 92, 276); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 125, 233); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 67, 352); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 180, 332); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 164, 251); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 104, 304); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 143, 235); // cd (w, cj)
+// Elapsed time: 61 seconds
+selectCodeEditor("BoardMap.v", 101, 264); // cd (w, cj)
+// Elapsed time: 16 seconds
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("BoardMap.v", 143, 284, false, true, false, true, false); // cd (w, cj) - Control Key - Popup Trigger
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("BoardMap.v", 196, 271); // cd (w, cj)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("BoardMap.v", 62, 312); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 106, 214); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 74, 300); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 52, 317); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 140, 211); // cd (w, cj)
+// Elapsed time: 13 seconds
+selectCodeEditor("BoardMap.v", 81, 360); // cd (w, cj)
+// Elapsed time: 10 seconds
+selectCodeEditor("BoardMap.v", 42, 347); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 95, 334); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 76, 266); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 69, 264); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 122, 353); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 108, 387); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 91, 264); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 75, 267); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 75, 351); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 95, 415); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 73, 325); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 96, 366); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 94, 448); // cd (w, cj)
+// WARNING: HTimer (HSTRUtils Dump STR Log Timer) is taking too long to process. Increasing delay to 7000 ms.
+// Elapsed time: 15 seconds
+selectCodeEditor("BoardMap.v", 60, 340); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 55, 328); // cd (w, cj)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 13 seconds
+selectCodeEditor("BoardMap.v", 273, 205); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 104, 77); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 117, 125); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 88, 147); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 94, 116); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 77, 128); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 60, 113); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 105, 146); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 83, 178); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 69, 213); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 145, 180); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 98, 212); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 98, 252); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 82, 229); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 59, 112); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 56, 220); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 40, 228); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 134, 303); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 69, 287); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 56, 300); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 76, 298); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 56, 337); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 56, 282); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 87, 340); // cd (w, cj)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, cj)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// x (cj): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (x)
+// bs (cj):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // x (cj)
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// f (cj): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+dismissDialog("Launch Runs"); // f (cj)
+// TclEventType: RUN_LAUNCH
+// bs (cj):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Thu Feb 28 18:26:43 2019] Launched synth_1... Run output will be captured here: C:/Users/Daniel/Documents/College/3C7/3C7-Assignment-1/Assignment1.runs/synth_1/runme.log [Thu Feb 28 18:26:43 2019] Launched impl_1... Run output will be captured here: C:/Users/Daniel/Documents/College/3C7/3C7-Assignment-1/Assignment1.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bs (cj)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (cj): Bitstream Generation Completed: addNotify
+// Elapsed time: 172 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Bitstream Generation Completed"); // ah (cj)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 23, false); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7a35t_0"); // ac (ai, cj)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bA (cj): Program Device: addNotify
+applyEnter(PAResourceOtoP.ProgramFpgaDialog_SPECIFY_BITSTREAM_FILE, "C:/Users/Daniel/Documents/College/3C7/3C7-Assignment-1/Assignment1.runs/impl_1/BoardMap.bit"); // ag (af, bA)
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bA)
+// bs (cj):  Program Device : addNotify
+dismissDialog("Program Device"); // bA (cj)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/Daniel/Documents/College/3C7/3C7-Assignment-1/Assignment1.runs/impl_1/BoardMap.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bs (cj)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,280 MB. GUI used memory: 75 MB. Current time: 2/28/19 6:31:18 PM GMT
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking too long to process. Increasing delay to 4000 ms.
+// WARNING: HTimer (ExpRunMonitor Open Timer) is taking too long to process. Increasing delay to 8000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 8000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 7000 ms.
+// Elapsed time: 1522 seconds
+selectCodeEditor("BoardMap.v", 123, 211); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 127, 212); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 123, 212); // cd (w, cj)
+typeControlKey((HResource) null, "BoardMap.v", 'c'); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 125, 317); // cd (w, cj)
+typeControlKey((HResource) null, "BoardMap.v", 'v'); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 123, 400); // cd (w, cj)
+typeControlKey((HResource) null, "BoardMap.v", 'v'); // cd (w, cj)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, cj)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug]", 6); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// x (cj): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (x)
+// bs (cj):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // x (cj)
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// f (cj): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+dismissDialog("Launch Runs"); // f (cj)
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// bs (cj):  Generate Bitstream : addNotify
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Thu Feb 28 18:55:29 2019] Launched synth_1... Run output will be captured here: C:/Users/Daniel/Documents/College/3C7/3C7-Assignment-1/Assignment1.runs/synth_1/runme.log [Thu Feb 28 18:55:29 2019] Launched impl_1... Run output will be captured here: C:/Users/Daniel/Documents/College/3C7/3C7-Assignment-1/Assignment1.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bs (cj)
+// Elapsed time: 41 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // u (O, cj) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_PROJECT_MANAGER
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (cj): Bitstream Generation Completed: addNotify
+// Elapsed time: 124 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Bitstream Generation Completed"); // ah (cj)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 23, false); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7a35t_0"); // ac (ai, cj)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bA (cj): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bA)
+// bs (cj):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bA (cj)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/Daniel/Documents/College/3C7/3C7-Assignment-1/Assignment1.runs/impl_1/BoardMap.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bs (cj)
+// Elapsed time: 35 seconds
+selectCodeEditor("BoardMap.v", 183, 200); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 82, 197); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 85, 296); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 83, 387); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 149, 228); // cd (w, cj)
+// Elapsed time: 34 seconds
+selectCodeEditor("BoardMap.v", 104, 350); // cd (w, cj)
+// WARNING: HTimer (ExpRunMonitor Open Timer) is taking too long to process. Increasing delay to 9000 ms.
+selectCodeEditor("BoardMap.v", 137, 232); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 143, 230); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 129, 228); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 114, 233); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 171, 232); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 157, 244); // cd (w, cj)
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 8000 ms.
+selectCodeEditor("BoardMap.v", 124, 228); // cd (w, cj)
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 9000 ms.
+selectCodeEditor("BoardMap.v", 155, 244); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 29, 347); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 26, 452); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 54, 470); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 55, 366); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 51, 247); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 179, 250); // cd (w, cj)
+// Elapsed time: 14 seconds
+selectCodeEditor("BoardMap.v", 183, 404); // cd (w, cj)
+// Elapsed time: 13 seconds
+selectCodeEditor("BoardMap.v", 219, 540); // cd (w, cj)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// Elapsed time: 12 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, cj)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug]", 6); // u (O, cj)
+// TclEventType: DG_GRAPH_GENERATED
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// x (cj): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (x)
+// bs (cj):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // x (cj)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cj): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+dismissDialog("Launch Runs"); // f (cj)
+// TclEventType: RUN_LAUNCH
+// bs (cj):  Generate Bitstream : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// Tcl Message: [Thu Feb 28 19:00:57 2019] Launched synth_1... Run output will be captured here: C:/Users/Daniel/Documents/College/3C7/3C7-Assignment-1/Assignment1.runs/synth_1/runme.log [Thu Feb 28 19:00:57 2019] Launched impl_1... Run output will be captured here: C:/Users/Daniel/Documents/College/3C7/3C7-Assignment-1/Assignment1.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bs (cj)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // u (O, cj) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_PROJECT_MANAGER
+// HMemoryUtils.trashcanNow. Engine heap size: 1,280 MB. GUI used memory: 77 MB. Current time: 2/28/19 7:01:18 PM GMT
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_FAILED
+// ah (cj): Implementation Failed: addNotify
+// Elapsed time: 167 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Implementation Failed"); // ah (cj)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Place Design, [Place 30-574] Poor placement for routing between an IO pin and BUFG. If this sub optimal condition is acceptable for this design, you may use the CLOCK_DEDICATED_ROUTE constraint in the .xdc file to demote this message to a WARNING. However, the use of this override is highly discouraged. These examples can be used directly in the .xdc file to override this clock rule.. 	< set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets BTN_IBUF[0]] >. . 	BTN_IBUF[0]_inst (IBUF.O) is locked to IOB_X0Y15. 	 and BTN_IBUF_BUFG[0]_inst (BUFG.I) is provisionally placed by clockplacer on BUFGCTRL_X0Y0. ]", 5, true); // ah (O, cj) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Place Design, [Place 30-574] Poor placement for routing between an IO pin and BUFG. If this sub optimal condition is acceptable for this design, you may use the CLOCK_DEDICATED_ROUTE constraint in the .xdc file to demote this message to a WARNING. However, the use of this override is highly discouraged. These examples can be used directly in the .xdc file to override this clock rule.. 	< set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets BTN_IBUF[0]] >. . 	BTN_IBUF[0]_inst (IBUF.O) is locked to IOB_X0Y15. 	 and BTN_IBUF_BUFG[0]_inst (BUFG.I) is provisionally placed by clockplacer on BUFGCTRL_X0Y0. ]", 5, true); // ah (O, cj) - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "ID;-;[Place 30-574];-;;-;16;-;DetailedMsg;-;The IO/Clock placement failure represents the internal state of the last known placement generated by the tools. The message text suggests workarounds wherever applicable and the message resolution describes the correct behavior as expected by the tools. Please check any user constraints which may make finding a feasible placement impossible.;-;;-;16;-;Resolution;-;Poor placement of an IO pin and a BUFG has resulted in the router using a non-dedicated path between the two.  There are several things that could trigger this DRC, each of which can cause unpredictable clock insertion delays that result in poor timing.  This DRC could be caused by any of the following: (a) a clock port was placed on a pin that is not a CCIO-pin (b)the BUFG has not been placed in the same half of the device or SLR as the CCIO-pin (c) a single ended clock has been placed on the N-Side of a differential pair CCIO-pin.;-;;-;16;-;"); // ah (O, cj)
+// 'Place 30-574' Message Details: show
+selectCodeEditor("BoardMap.v", 256, 215); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 189, 386); // cd (w, cj)
+// Elapsed time: 62 seconds
+selectCodeEditor("BoardMap.v", 92, 181); // cd (w, cj)
+// Elapsed time: 15 seconds
+selectCodeEditor("BoardMap.v", 174, 218); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 84, 177); // cd (w, cj)
+typeControlKey((HResource) null, "BoardMap.v", 'c'); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 90, 332); // cd (w, cj)
+typeControlKey((HResource) null, "BoardMap.v", 'v'); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 92, 467); // cd (w, cj)
+typeControlKey((HResource) null, "BoardMap.v", 'v'); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 292, 388); // cd (w, cj)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 11 seconds
+selectCodeEditor("BoardMap.v", 98, 387); // cd (w, cj)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectCodeEditor("BoardMap.v", 94, 228); // cd (w, cj)
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 25 seconds
+selectCodeEditor("BoardMap.v", 178, 277); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 92, 144); // cd (w, cj)
+typeControlKey((HResource) null, "BoardMap.v", 'c'); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 84, 144); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 63, 478); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 138, 212); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 129, 278); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 140, 281); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 137, 365); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 139, 440); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 56, 314); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 69, 295); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 56, 299); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 69, 364); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 63, 387); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 80, 436); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 66, 468); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 93, 458); // cd (w, cj)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 10 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, cj)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation]", 5); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// x (cj): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (x)
+// bs (cj):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // x (cj)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cj): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cv' command handler elapsed time: 3 seconds
+dismissDialog("Launch Runs"); // f (cj)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// bs (cj):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// Tcl Message: [Thu Feb 28 19:07:07 2019] Launched synth_1... Run output will be captured here: C:/Users/Daniel/Documents/College/3C7/3C7-Assignment-1/Assignment1.runs/synth_1/runme.log [Thu Feb 28 19:07:07 2019] Launched impl_1... Run output will be captured here: C:/Users/Daniel/Documents/College/3C7/3C7-Assignment-1/Assignment1.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bs (cj)
+// Elapsed time: 28 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, open_project C:/Users/Daniel/Documents/College/3C7/3C7-Assignment-1/Assignment1.xpr. , [Board 49-67] The board_part definition was not found for digilentinc.com:basys3:part0:1.1. This can happen sometimes when you use custom board part. You can resolve this issue by setting 'board.repoPaths' parameter, pointing to the location of custom board files. Valid board_part values can be retrieved with the 'get_board_parts' Tcl command.. ]", 2, false); // ah (O, cj)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, open_project C:/Users/Daniel/Documents/College/3C7/3C7-Assignment-1/Assignment1.xpr. , [Board 49-67] The board_part definition was not found for digilentinc.com:basys3:part0:1.1. This can happen sometimes when you use custom board part. You can resolve this issue by setting 'board.repoPaths' parameter, pointing to the location of custom board files. Valid board_part values can be retrieved with the 'get_board_parts' Tcl command.. ]", 2, false, false, false, false, false, true); // ah (O, cj) - Double Click
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (cj): Bitstream Generation Completed: addNotify
+// Elapsed time: 118 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Bitstream Generation Completed"); // ah (cj)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 23, false); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7a35t_0"); // ac (ai, cj)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bA (cj): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bA)
+// bs (cj):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bA (cj)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/Daniel/Documents/College/3C7/3C7-Assignment-1/Assignment1.runs/impl_1/BoardMap.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bs (cj)
+// Elapsed time: 31 seconds
+selectCodeEditor("BoardMap.v", 111, 99); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 111, 93); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 147, 164); // cd (w, cj)
+selectCodeEditor("BoardMap.v", 113, 301); // cd (w, cj)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// Elapsed time: 10 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, cj)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation]", 5); // u (O, cj)
+// TclEventType: DG_GRAPH_GENERATED
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// x (cj): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (x)
+// bs (cj):  Resetting Runs : addNotify
+dismissDialog("Synthesis is Out-of-date"); // x (cj)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_MODIFY
+// f (cj): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+dismissDialog("Launch Runs"); // f (cj)
+// bs (cj):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Thu Feb 28 19:10:39 2019] Launched synth_1... Run output will be captured here: C:/Users/Daniel/Documents/College/3C7/3C7-Assignment-1/Assignment1.runs/synth_1/runme.log [Thu Feb 28 19:10:39 2019] Launched impl_1... Run output will be captured here: C:/Users/Daniel/Documents/College/3C7/3C7-Assignment-1/Assignment1.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bs (cj)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183A75A3BA 
+// n (cj): Close Hardware Target: addNotify
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Elapsed time: 34 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (n)
+dismissDialog("Close Hardware Target"); // n (cj)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // u (O, cj) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_PROJECT_MANAGER
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183A75A3BA 
+// n (cj): Close Hardware Target: addNotify
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: RUN_COMPLETED
+// Elapsed time: 21 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (n)
+dismissDialog("Close Hardware Target"); // n (cj)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183A75A3BA 
+// n (cj): Close Hardware Target: addNotify
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 28 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (n)
+dismissDialog("Close Hardware Target"); // n (cj)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Elapsed time: 52 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Open Target]", 22, false); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+selectMenuItem(PAResourceCommand.PACommandNames_OPEN_TARGET_WIZARD, "Open New Target..."); // ac (ai, cj)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_OPEN_TARGET_WIZARD
+// TclEventType: RUN_COMPLETED
+// aM (cj): Open New Hardware Target: addNotify
+dismissDialog("Open New Hardware Target"); // aM (cj)
+// ah (cj): Bitstream Generation Completed: addNotify
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+// aI (cj): Feedback Request: addNotify
+dismissDialog("Bitstream Generation Completed"); // ah (cj)
+selectButton(PAResourceTtoZ.TouchpointSurveyDialog_NO, "No"); // a (aI)
+dismissDialog("Feedback Request"); // aI (cj)
+selectButton("PAResourceTtoZ.TouchpointSurveyDialog_USE_TOOLS_OPTIONS_WINDOWS_BEHAVIOR_OK", "OK"); // JButton (A, G)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cZ, cj)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bA (cj): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bA)
+// bs (cj):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bA (cj)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/Daniel/Documents/College/3C7/3C7-Assignment-1/Assignment1.runs/impl_1/BoardMap.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bs (cj)
+// Elapsed time: 24 seconds
+selectCodeEditor("BoardMap.v", 151, 231); // cd (w, cj)

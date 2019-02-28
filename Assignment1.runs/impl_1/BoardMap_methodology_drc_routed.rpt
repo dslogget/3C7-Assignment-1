@@ -1,8 +1,8 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
-| Date         : Mon Feb 18 09:22:06 2019
-| Host         : DESKTOP-NL9J8SI running 64-bit major release  (build 9200)
+| Date         : Thu Feb 28 19:12:35 2019
+| Host         : Daniel-PC running 64-bit major release  (build 9200)
 | Command      : report_methodology -file BoardMap_methodology_drc_routed.rpt -pb BoardMap_methodology_drc_routed.pb -rpx BoardMap_methodology_drc_routed.rpx
 | Design       : BoardMap
 | Device       : xc7a35tcpg236-1

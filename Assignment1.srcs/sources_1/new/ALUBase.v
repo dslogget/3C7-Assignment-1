@@ -48,24 +48,20 @@ module ALUBase(
     always @*
     begin
         case(fxn)
-        default:
-        begin
-            X = A;
-        end
         3'b001:
         begin
             X = B;
         end
         3'b010:
         begin
-            sel = 1;
+            sel = 1'b1;
             x = 6'b000000;
             y = A;
             X = sum;   
         end
         3'b011:
         begin
-            sel = 1;
+            sel = 1'b1;
             x = 6'b000000;
             y = B;
             X = sum;   
@@ -73,7 +69,7 @@ module ALUBase(
         
         3'b100:
         begin
-            sel = 1;
+            sel = 1'b1;
             x = A;
             y = B;
             X = c_out;
@@ -82,11 +78,14 @@ module ALUBase(
         3'b101:
         begin
             X = A^B;
+            x = 6'b000000;
+            y = 6'b000000;
+            sel = 1'b0;
         end
         
         3'b110:
         begin
-            sel = 0;
+            sel = 1'b0;
             x = A;
             y = B;
             X = sum;
@@ -94,12 +93,18 @@ module ALUBase(
         
         3'b111:
         begin
-            sel = 1;
+            sel = 1'b1;
             x = A;
             y = B;
             X = sum; 
         end
-        
+        default:
+            begin
+                X = A;
+                x = 6'b000000;
+                y = 6'b000000;
+                sel = 1'b0;
+            end
         endcase
     
     end

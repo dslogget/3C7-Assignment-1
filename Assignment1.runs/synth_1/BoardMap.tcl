@@ -16,25 +16,24 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
+set_param xicom.use_bs_reader 1
 create_project -in_memory -part xc7a35tcpg236-1
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir E:/Vivado/Assignment1/Assignment1.cache/wt [current_project]
-set_property parent.project_path E:/Vivado/Assignment1/Assignment1.xpr [current_project]
+set_property webtalk.parent_dir C:/Users/Daniel/Documents/College/3C7/3C7-Assignment-1/Assignment1.cache/wt [current_project]
+set_property parent.project_path C:/Users/Daniel/Documents/College/3C7/3C7-Assignment-1/Assignment1.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property board_part_repo_paths E:/Vivado/vivado-boards-master/new/board_files [current_project]
-set_property board_part digilentinc.com:basys3:part0:1.1 [current_project]
-set_property ip_output_repo e:/Vivado/Assignment1/Assignment1.cache/ip [current_project]
+set_property ip_output_repo c:/Users/Daniel/Documents/College/3C7/3C7-Assignment-1/Assignment1.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_verilog -library xil_defaultlib {
-  E:/Vivado/Assignment1/Assignment1.srcs/sources_1/new/ALUBase.v
-  E:/Vivado/Assignment1/Assignment1.srcs/sources_1/new/Display.v
-  E:/Vivado/Assignment1/RippleCarryAdder.v
-  E:/Vivado/Assignment1/full_adder.v
-  E:/Vivado/Assignment1/Assignment1.srcs/sources_1/new/BoardMap.v
+  C:/Users/Daniel/Documents/College/3C7/3C7-Assignment-1/Assignment1.srcs/sources_1/new/ALUBase.v
+  C:/Users/Daniel/Documents/College/3C7/3C7-Assignment-1/Assignment1.srcs/sources_1/new/Display.v
+  C:/Users/Daniel/Documents/College/3C7/3C7-Assignment-1/RippleCarryAdder.v
+  C:/Users/Daniel/Documents/College/3C7/3C7-Assignment-1/full_adder.v
+  C:/Users/Daniel/Documents/College/3C7/3C7-Assignment-1/Assignment1.srcs/sources_1/new/BoardMap.v
 }
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -44,8 +43,8 @@ read_verilog -library xil_defaultlib {
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc E:/Vivado/Assignment1/Basys3.xdc
-set_property used_in_implementation false [get_files E:/Vivado/Assignment1/Basys3.xdc]
+read_xdc C:/Users/Daniel/Documents/College/3C7/3C7-Assignment-1/Basys3.xdc
+set_property used_in_implementation false [get_files C:/Users/Daniel/Documents/College/3C7/3C7-Assignment-1/Basys3.xdc]
 
 
 synth_design -top BoardMap -part xc7a35tcpg236-1

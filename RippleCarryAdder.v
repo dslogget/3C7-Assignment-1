@@ -1,23 +1,5 @@
 `timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 06.02.2019 17:11:17
-// Design Name: 
-// Module Name: RippleCarryAdder
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
-//////////////////////////////////////////////////////////////////////////////////
+//A simple ripple carry adder based on the provided module
 
 
 module RippleCarryAdder(
@@ -33,7 +15,7 @@ module RippleCarryAdder(
     wire[5:0] y_ac;
     wire[5:0] sel_ext;
     assign sel_ext = {6{sel}};
-    assign y_ac = sel_ext&(~y) | ~sel_ext&(y);
+    assign y_ac = sel_ext&(~y) | ~sel_ext&(y); //if sel is enabled, invert y and carry in; else normal
     
     FullAdder ad0(.a(x[0]), .b(y_ac[0]), .cin(sel), .s(sum[0]), .cout(c0));
     FullAdder ad1(.a(x[1]), .b(y_ac[1]), .cin(c0), .s(sum[1]), .cout(c1));

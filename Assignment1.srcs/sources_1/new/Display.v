@@ -1,23 +1,5 @@
 `timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 14.02.2019 18:58:37
-// Design Name: 
-// Module Name: Display
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
-//////////////////////////////////////////////////////////////////////////////////
+//take the value from "num" and display to the 7seg
 
 
 module Display(
@@ -30,15 +12,18 @@ module Display(
     reg[19:0] cntr = 19'b0;
     reg[3:0] nibble;
     
+    //counter to delay change
     always@(posedge(CLK))
     begin
         cntr <= cntr + 1'b1;
     end
     
     assign SSEG_AN[3:2] = 2'b11;
-    assign SSEG_AN[0] = cntr[19];
+    assign SSEG_AN[0] = cntr[19];//this makes it so the value only changes slower than every clock cycle
     assign SSEG_AN[1] = ~cntr[19];
      
+     
+    //pulling the correct nibble 
     always@*
     begin
 	    case(SSEG_AN[1:0])
@@ -47,7 +32,7 @@ module Display(
             default: nibble = 4'b0000;
         endcase
     end
-    
+    //decoding said nibble
     always@*
     begin
         case(nibble)

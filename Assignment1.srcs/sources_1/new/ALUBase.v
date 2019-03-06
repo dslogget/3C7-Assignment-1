@@ -1,23 +1,5 @@
 `timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 14.02.2019 18:14:52
-// Design Name: 
-// Module Name: ALUBase
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
-//////////////////////////////////////////////////////////////////////////////////
+//implementation of the 6bit ALU
 
 
 module ALUBase(
@@ -26,22 +8,14 @@ module ALUBase(
     input wire [2:0] fxn,
     output reg [5:0] X
     );
-    
-    /*
-    input [5:0] x,
-        input [5:0] y,
-        input sel,
-        output overflow,
-        output c_out,
-        output [5:0] sum
-    */
+
     reg[5:0] x, y;
     reg sel;
     wire c_out;
     wire overflow;
     wire[5:0] sum;
     wire gte;
-    
+    //instanciating the module
     RippleCarryAdder ad(.x(x), .y(y), .sel(sel), .overflow(overflow), .sum(sum), .c_out(c_out));
 
     
@@ -50,10 +24,12 @@ module ALUBase(
         case(fxn)
         3'b001:
         begin
+            //output B
             X = B;
         end
         3'b010:
         begin
+            //output -A
             sel = 1'b1;
             x = 6'b000000;
             y = A;
@@ -61,6 +37,7 @@ module ALUBase(
         end
         3'b011:
         begin
+             //output -B
             sel = 1'b1;
             x = 6'b000000;
             y = B;
@@ -69,6 +46,7 @@ module ALUBase(
         
         3'b100:
         begin
+             //output A >= B through the carry flag
             sel = 1'b1;
             x = A;
             y = B;
@@ -77,6 +55,7 @@ module ALUBase(
         
         3'b101:
         begin
+            //output A xor B
             X = A^B;
             x = 6'b000000;
             y = 6'b000000;
@@ -85,6 +64,7 @@ module ALUBase(
         
         3'b110:
         begin
+            //output A + B
             sel = 1'b0;
             x = A;
             y = B;
@@ -93,6 +73,7 @@ module ALUBase(
         
         3'b111:
         begin
+            //output A - B
             sel = 1'b1;
             x = A;
             y = B;
@@ -100,6 +81,8 @@ module ALUBase(
         end
         default:
             begin
+            
+            //default output A
                 X = A;
                 x = 6'b000000;
                 y = 6'b000000;
